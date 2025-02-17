@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Money Counter</title>
+    <meta name="description" content="This is a site on which you can Count Your Money Easily and Fast ">
+    <title>Money Counter - By Malla Ali Mohammad</title>
     <link rel="stylesheet" href="moneycount.css">
 </head>
+
 <body>
+    <img src="logo.png" alt="logo">
     <div class="container">
         <h2>Money Counter</h2>
-        <label for="fivehundred">₹500:</label>
-        <input type="number" id="fivehundred" value=""><br>
-        <label for="hundred">₹100:</label>
-        <input type="number" id="hundred" value=""><br>
-        <label for="fifty">₹50:</label>
-        <input type="number" id="fifty" value=""><br>
-        <label for="twenty">₹20:</label>
-        <input type="number" id="twenty" value=""><br>
-        <label for="ten">₹10:</label>
-        <input type="number" id="ten" value=""><br>
+        <label for="fivehundred">₹ 500 :</label>
+        <input type="number" id="fivehundred" class="box" value=""><br>
+        <label for="twohundred">₹ 200 :</label>
+        <input type="number" id="twohundred" class="box" value=""><br>
+        <label for="hundred">₹ 100 :</label>
+        <input type="number" id="hundred" class="box" value=""><br>
+        <label for="fifty">₹ 50 :</label>
+        <input type="number" id="fifty" class="box" value=""><br>
+        <label for="twenty">₹ 20 :</label>
+        <input type="number" id="twenty" class="box" value=""><br>
+        <label for="ten">₹ 10 :</label>
+        <input type="number" id="ten" class="box" value=""><br>
+        <label for="five">₹ 5 :</label>
+        <input type="number" id="five" class="box" value=""><br>
         <button onclick="generateBill()">Generate Bill</button>
         <h3>Total: ₹<span id="total">0</span></h3>
-        <hr><hr>
+        <hr>
+        <hr>
         <div class="bill" id="bill">
-            <h3>Bill Summary</h3>
-            <p>₹500 Notes: <span id="bill_fivehundred">0</span></p>
-            <p>₹100 Notes: <span id="bill_hundred">0</span></p>
-            <p>₹50 Notes: <span id="bill_fifty">0</span></p>
-            <p>₹20 Notes: <span id="bill_twenty">0</span></p>
-            <p>₹10 Notes: <span id="bill_ten">0</span></p>
+            <h3 class="billsummary" style="text-align: center; font-size: 30px;">Bill Summary</h3>
+            <p>₹ 500 Notes: <span id="bill_fivehundred">0</span></p>
+            <p>₹ 200 Notes: <span id="bill_twohundred">0</span></p>
+            <p>₹ 100 Notes: <span id="bill_hundred">0</span></p>
+            <p>₹ 50 Notes:  <span id="bill_fifty">0</span></p>
+            <p>₹ 20 Notes:  <span id="bill_twenty">0</span></p>
+            <p>₹ 10 Notes:  <span id="bill_ten">0</span></p>
+            <p>₹ 5 Coins:   <span id="bill_five">0</span></p>
             <h3>Total: ₹<span id="bill_total">0</span></h3>
-            <hr><hr>
-            <p class="watermark"> Made With &#9829;  By Malla Ali Mohammad</p>
+            <hr>
+            <hr>
+            <p class="watermark"> Made With &#9829; By Malla Ali Mohammad</p>
         </div>
     </div>
+<marquee behavior="rel" direction="left">This Web Site is Mady by MALLA ALI MOHAMMAD WITH &#9829;</marquee>
     <script src="moneycount.js"></script>
 </body>
 </html>
