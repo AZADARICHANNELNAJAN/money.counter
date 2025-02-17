@@ -1,4 +1,4 @@
-// alert("Welcome to in my money count Site")
+alert("Welcome to in my money count Site")
 function generateBill() {
     let fivehundredCount = parseInt(document.getElementById('fivehundred').value) || 0;
     let twohundredCount = parseInt(document.getElementById('twohundred').value) || 0;
